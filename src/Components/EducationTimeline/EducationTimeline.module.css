@@ -1,0 +1,88 @@
+.MainContainer {
+    width: 100%;
+    padding: 12px 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.DetailsContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background: #EAF0F8;
+    border: 1px solid #fff;
+    border-radius: 4px 4px 12px 0;
+    margin: 12px 0;
+    padding: 12px;
+    box-shadow: 0 30px 60px #a7b3be;
+    position: relative;
+}
+
+.Pointer {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 20% 20% 20% 0;
+    background: #fff;
+    position: absolute;
+    top: 55%;
+    left: 1.5%;
+    box-shadow: 0 8px 16px rgb(216, 216, 216);
+}
+
+.SubContainer {
+    width: 95%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background: #EAF0F8;
+    box-shadow: -14px 18px 16px #c3cddb,
+                0 -12px 8px #fff;
+    padding: 8px 12px;
+    position: relative;
+    top: 36px;
+    left: 4.5%;
+    z-index: 1;
+    border-radius: 0 0 12px 0;
+    transition: all 100ms ease-in;
+}
+.InstitutionName {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+}
+
+.SubContainer:hover {
+    /*left: 2%;*/
+    background-color: #fff;
+}
+
+.SubContainer:hover .InstitutionName{
+    font-weight: 700;
+}
+
+.BoardName::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: relative;
+    right: 100%;
+    z-index: 2;
+}
+
+.BoardName, .ClassesFrom, .YearOfJoining {
+    position: relative;
+    left: 4%;
+    border-left: 1px solid #000;
+    padding: 12px 12px 12px 24px;
+}
+
+.TimelinePointer {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: -0.5px;
+    background: #000;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
